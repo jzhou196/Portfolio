@@ -9,9 +9,12 @@ export function ProjectCard({ project }: { project: Project }) {
         href={`/projects/${project.slug}`}
         className="group relative flex h-full flex-col rounded-lg border border-line bg-panel p-5 transition-all hover:-translate-y-0.5 hover:border-amber/60 hover:shadow-lg hover:shadow-black/30 focus-visible:border-amber"
       >
-        <span className="absolute top-4 right-4 flex h-10 w-16 items-center justify-center rounded border border-line bg-white p-1.5">
+        <span
+          className="absolute top-4 right-4 flex h-9 items-center justify-center rounded border border-line px-2 py-1"
+          style={{ backgroundColor: project.logo.bg }}
+        >
           {/* eslint-disable-next-line @next/next/no-img-element -- static local SVGs, no optimization needed */}
-          <img src={project.logo.src} alt={project.logo.alt} className="max-h-full max-w-full object-contain" />
+          <img src={project.logo.src} alt={project.logo.alt} className="h-full w-auto max-w-24 object-contain" />
         </span>
         <p className="font-mono text-xs text-muted mb-3 pr-20">
           <span className="text-amber">{project.index}</span>

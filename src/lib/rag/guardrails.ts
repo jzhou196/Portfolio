@@ -20,7 +20,7 @@ export function looksLikeInjection(text: string): boolean {
 }
 
 export const INJECTION_REPLY =
-  "Nice try — but I only answer questions about Jeff's background, skills, and projects. Ask me about the fraud detection pipeline, the CLV work, or his RAG systems.";
+  "Nice try — but I only talk about my background, skills, and projects. Ask me about my fraud detection pipeline, my CLV work, or my RAG systems.";
 
 // --- rate limiting ----------------------------------------------------------
 // Upstash sliding windows: a per-minute burst limit plus a daily ceiling per

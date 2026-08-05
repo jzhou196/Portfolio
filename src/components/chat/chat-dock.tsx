@@ -105,6 +105,15 @@ export function ChatDock() {
                     <span className="text-amber">$ </span>
                     {m.content}
                   </p>
+                ) : m.content === "" && pending && i === messages.length - 1 ? (
+                  <p className="flex items-center gap-2 text-muted" aria-label="The assistant is thinking">
+                    <span className="thinking" aria-hidden>
+                      <span />
+                      <span />
+                      <span />
+                    </span>
+                    <span className="text-xs text-muted/70">thinking…</span>
+                  </p>
                 ) : (
                   <p className="whitespace-pre-wrap text-muted">
                     {m.content}

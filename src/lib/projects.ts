@@ -7,7 +7,7 @@ export type Metric = { value: string; label: string };
 export type Project = {
   slug: string;
   index: string; // display order marker, e.g. "01"
-  logo: { src: string; alt: string }; // org logo tile shown on the card corner
+  logo: { src: string; alt: string; bg: string }; // org logo tile on the card corner (bg = tile color behind the mark)
   title: string;
   tagline: string; // one-line problem statement, business framing
   summary: string; // card copy for the home grid
@@ -27,7 +27,7 @@ export const projects: Project[] = [
   {
     slug: "fraud-detection",
     index: "01",
-    logo: { src: "/logos/scotiabank.svg", alt: "Scotiabank" },
+    logo: { src: "/logos/scotiabank.svg", alt: "Scotiabank", bg: "#ffffff" },
     title: "Credit-Card Fraud Detection",
     tagline:
       "Turn 4,224 raw accounts into a short, ranked, explained list of suspicious nodes an investigator can act on.",
@@ -110,7 +110,7 @@ export const projects: Project[] = [
   {
     slug: "clv-prediction",
     index: "02",
-    logo: { src: "/logos/bmo.svg", alt: "BMO" },
+    logo: { src: "/logos/bmo.svg", alt: "BMO", bg: "#ffffff" },
     title: "Customer Lifetime Value → Campaign ROI",
     tagline:
       "Rank customers by expected lifetime value at two decision points, then turn predictions into a targeting decision marketing can spend against.",
@@ -191,7 +191,7 @@ export const projects: Project[] = [
   {
     slug: "nlp-sentiment",
     index: "03",
-    logo: { src: "/logos/rotman.svg", alt: "Rotman School of Management" },
+    logo: { src: "/logos/rotman.svg", alt: "Rotman School of Management", bg: "#EC008C" },
     title: "Sentiment: Classical vs. Deep vs. Transformer",
     tagline:
       "Classify review sentiment at scale — and answer which model is right once latency and serving cost are on the table.",
@@ -247,7 +247,7 @@ export const projects: Project[] = [
   {
     slug: "cie-agent-rag",
     index: "04",
-    logo: { src: "/logos/rotman.svg", alt: "Rotman School of Management" },
+    logo: { src: "/logos/rotman.svg", alt: "Rotman School of Management", bg: "#EC008C" },
     title: "CIE Agent — Agentic RAG Assistant",
     tagline:
       "Answer international students' questions with sources, complete structured tasks, and never hallucinate immigration advice.",
