@@ -46,10 +46,10 @@ export function ChatDock() {
         <button
           type="button"
           onClick={() => setOpen(true)}
-          className="fixed bottom-4 right-4 z-50 rounded border border-line bg-panel px-4 py-2.5 font-mono text-sm text-text shadow-lg shadow-black/40 transition-colors hover:border-amber hover:text-amber"
-          aria-label="Open the Ask about me assistant"
+          className="fixed bottom-4 right-4 z-50 rounded-full bg-[#eceae3] px-4 py-2.5 font-mono text-sm font-medium text-ink shadow-lg shadow-black/40 transition-colors hover:bg-amber"
+          aria-label="Open the Ask AI about Jeff assistant"
         >
-          <span className="text-amber">$</span> ask-jeff
+          Ask AI about Jeff
         </button>
       )}
 

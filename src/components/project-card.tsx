@@ -5,9 +5,15 @@ export function ProjectCard({ project }: { project: Project }) {
   return (
     <Link
       href={`/projects/${project.slug}`}
-      className="group flex flex-col rounded-lg border border-line bg-panel p-5 transition-colors hover:border-amber/60 focus-visible:border-amber"
+      className="group relative flex flex-col rounded-lg border border-line bg-panel p-5 transition-colors hover:border-amber/60 focus-visible:border-amber"
     >
-      <p className="font-mono text-xs text-muted mb-3">
+      <span
+        aria-hidden
+        className="absolute top-4 right-4 flex h-10 w-10 items-center justify-center rounded border border-line bg-ink font-mono text-[11px] font-semibold text-sage group-hover:border-sage transition-colors"
+      >
+        {project.badge}
+      </span>
+      <p className="font-mono text-xs text-muted mb-3 pr-12">
         <span className="text-amber">{project.index}</span>
         <span className="mx-2 text-line">/</span>
         {project.org}

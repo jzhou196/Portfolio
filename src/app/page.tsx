@@ -13,7 +13,7 @@ export default function Home() {
           <span className="text-amber">$</span> whoami
         </p>
         <h1 className="font-mono text-3xl sm:text-5xl text-text leading-tight">
-          Jeff Zhou
+          Jiefu (Jeff) Zhou
           <span className="block mt-2 text-xl sm:text-2xl text-muted font-sans font-normal">
             Data scientist — applied ML that ships a decision.
           </span>

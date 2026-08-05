@@ -2,7 +2,7 @@ import Link from "next/link";
 import { site } from "@/lib/site";
 
 const nav = [
-  { href: "/", label: "~" },
+  { href: "/", label: "/main" },
   { href: "/#projects", label: "~/projects" },
   { href: "/about", label: "~/about" },
 ];
