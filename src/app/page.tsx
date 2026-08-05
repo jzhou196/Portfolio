@@ -3,6 +3,8 @@ import { site } from "@/lib/site";
 import { projects } from "@/lib/projects";
 import { ProjectCard } from "@/components/project-card";
 import { HeroPrompt } from "@/components/chat/hero-prompt";
+import { TypedCommand } from "@/components/typed-command";
+import { Reveal } from "@/components/reveal";
 
 export default function Home() {
   return (
@@ -10,40 +12,47 @@ export default function Home() {
       {/* hero */}
       <section className="pt-16 sm:pt-24 pb-12">
         <p className="font-mono text-sm text-muted mb-4">
-          <span className="text-amber">$</span> whoami
+          <span className="text-amber">$</span> <TypedCommand text="whoami" />
         </p>
-        <h1 className="font-mono text-3xl sm:text-5xl text-text leading-tight">
-          Jiefu (Jeff) Zhou
-          <span className="block mt-2 text-xl sm:text-2xl text-muted font-sans font-normal">
-            Data scientist — applied ML that ships a decision.
-          </span>
-        </h1>
-        <p className="mt-6 max-w-2xl text-muted leading-relaxed">
-          Finance undergrad + Rotman MMA. I build models banks can act on — fraud and credit-risk
-          systems with the governance a regulated environment demands, customer-lifetime-value
-          models marketing can spend against, and grounded LLM/RAG assistants that don&apos;t make
-          things up.
-        </p>
-        <div className="mt-10">
+        <div className="hero-enter">
+          <h1 className="font-mono text-3xl sm:text-5xl text-text leading-tight">
+            Jiefu (Jeff) Zhou
+            <span className="block mt-2 text-xl sm:text-2xl text-muted font-sans font-normal">
+              Data scientist — applied ML that ships a decision.
+            </span>
+          </h1>
+          <p className="mt-6 max-w-2xl text-muted leading-relaxed">
+            Finance undergrad + Rotman MMA. I build models banks can act on — fraud and credit-risk
+            systems with the governance a regulated environment demands, customer-lifetime-value
+            models marketing can spend against, and grounded LLM/RAG assistants that don&apos;t make
+            things up.
+          </p>
+        </div>
+        <div className="mt-10 hero-enter-late">
           <HeroPrompt />
         </div>
       </section>
 
       {/* projects */}
       <section id="projects" className="py-12 scroll-mt-16">
-        <p className="font-mono text-sm text-muted mb-6">
-          <span className="text-amber">$</span> ls ~/projects{" "}
-          <span className="text-muted/60"># problem → approach → result → reflection</span>
-        </p>
+        <Reveal>
+          <p className="font-mono text-sm text-muted mb-6">
+            <span className="text-amber">$</span> ls ~/projects{" "}
+            <span className="text-muted/60"># problem → approach → result → reflection</span>
+          </p>
+        </Reveal>
         <div className="grid gap-4 sm:grid-cols-2">
-          {projects.map((p) => (
-            <ProjectCard key={p.slug} project={p} />
+          {projects.map((p, i) => (
+            <Reveal key={p.slug} delay={i * 90} className="h-full">
+              <ProjectCard project={p} />
+            </Reveal>
           ))}
         </div>
       </section>
 
       {/* about, short */}
       <section className="py-12">
+        <Reveal>
         <p className="font-mono text-sm text-muted mb-6">
           <span className="text-amber">$</span> head about.md
         </p>
@@ -69,6 +78,7 @@ export default function Home() {
             </a>
           </p>
         </div>
+        </Reveal>
       </section>
     </div>
   );

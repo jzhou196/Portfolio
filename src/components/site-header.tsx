@@ -9,7 +9,10 @@ const nav = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 border-b border-line bg-ink/90 backdrop-blur">
+    <header
+      className="sticky top-0 z-40 border-b border-line bg-ink/90 backdrop-blur"
+      style={{ viewTransitionName: "site-header" }}
+    >
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link
           href="/"

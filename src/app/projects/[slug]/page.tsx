@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ViewTransition } from "react";
 import { notFound } from "next/navigation";
 import { getProject, projects } from "@/lib/projects";
 import { SectionLabel } from "@/components/section-label";
@@ -28,6 +29,7 @@ export default async function ProjectPage(props: PageProps<"/projects/[slug]">) 
   if (!project) notFound();
 
   return (
+    <ViewTransition name={`card-${project.slug}`} share="morph" default="none">
     <article className="mx-auto max-w-3xl px-4 sm:px-6 pt-12 sm:pt-16">
       {/* header */}
       <p className="font-mono text-sm text-muted mb-6">
@@ -162,6 +164,7 @@ export default async function ProjectPage(props: PageProps<"/projects/[slug]">) 
         <NextProject slug={project.slug} />
       </nav>
     </article>
+    </ViewTransition>
   );
 }
 
