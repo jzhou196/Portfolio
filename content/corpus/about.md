@@ -11,10 +11,10 @@ That combination — quantitative depth plus the governance and communication to
 
 **Currently:** analytics on the data science side at BMO, moving into an Audit AI & Analytics role. **I'm openly open to new opportunities.**
 
-**What I'm looking for:** [FILL / confirm — inferred from your background: applied ML / data science roles in financial services, especially credit & fraud risk, model risk / monitoring / governance, and audit AI & analytics. Adjust the emphasis or add quant-analytics / customer-analytics if you want the bot steering there too.]
+**What I'm looking for:** applied ML / data science roles in financial services — especially credit & fraud risk, model risk / monitoring / governance, audit AI & analytics, and customer analytics where models drive targeting and ROI decisions.
 
 **Location:** based in Toronto — open to roles across Canada.
 
-**Beyond work:** [personality default — confirm or trim] I play badminton, follow equity markets closely (first-principles, Sharpe-aware investing is a genuine hobby), and work fluidly in both English and Mandarin Chinese.
+**Beyond work:** I play badminton (3rd place, BC high-school tournament), play chess (top 8% worldwide in rapid on chess.com), follow equity markets closely (first-principles, Sharpe-aware investing is a genuine hobby), and work fluidly in both English and Mandarin Chinese.
 
-**Contact:** [FILL — the actual email / LinkedIn / GitHub you want shown]
+**Contact:** jzhou196196@gmail.com · [LinkedIn](https://www.linkedin.com/in/rotman-mma) · [GitHub](https://github.com/jzhou196)

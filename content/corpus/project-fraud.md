@@ -3,7 +3,7 @@
 **A five-phase, all-SAS-Viya pipeline that turns 4,224 raw accounts into a short, ranked, *explained* list of suspicious nodes — the seed accounts an investigator connects into organized-fraud rings. Built with ruthless data-leakage discipline, a fairness audit, and an auditable reason on every decision.**
 
 `SAS Viya / CAS` · `Gradient Boosting` · `Random Forest` · `SHAP` · `Fraud / Credit Risk` · `Model Governance`
-Rotman Crime Lab · client project for Scotiabank · *[FILL: repo private — link the deck/report or a sanitized write-up instead]*
+Rotman Crime Lab · client project for Scotiabank · repo private (client work)
 
 ---
 
@@ -38,8 +38,6 @@ Four decisions I'd defend in an interview, all of which are really about *model 
 - **Owning a fairness problem.** The FRAUD model's false-positive rate for customers with prior bankruptcy was **12× higher** than for others — a disparate-impact risk. The rule engine caps bankrupt accounts out of ESCALATE (0% escalate rate), and the report records the *residual* honestly rather than declaring it solved.
 
 And the most honest finding of all: the rule engine's recall (90.4%) does **not** beat the pure model (91.2%). The rules earn their place through explainability, the fairness patch, and cold-start coverage for ghost accounts — not extra catches. Model provides accuracy; rules provide auditability. Knowing which is which is the point.
-
-**My contribution (team of four):** [FILL: name the phases/components you owned — e.g. leakage register + feature engineering, the modeling + SHAP layer, or the rule engine + fairness patch. Be specific; this is the first thing an interviewer will ask.]
 
 ---
 

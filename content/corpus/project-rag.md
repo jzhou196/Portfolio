@@ -3,7 +3,7 @@
 **A production-style agentic RAG assistant for the University of Toronto Centre for International Experience — not just retrieval, but intent routing, multi-turn tool actions, safety guardrails, and a real evaluation harness. This is the same class of system powering the "Ask about me" assistant on this site.**
 
 `Python` · `ChromaDB` · `SentenceTransformers` · `Pydantic` · `Streamlit` · `Agentic RAG`
-Repo: https://github.com/Vickylin17/UofT-CIE-Conversational-Agent · Live demo: *[FILL: confirm the Streamlit deployment is still live before linking]*
+Repo: https://github.com/Vickylin17/UofT-CIE-Conversational-Agent
 
 ---
 
@@ -36,8 +36,6 @@ Routing intents into separate lanes — instead of stuffing everything into one 
 The part most student RAG projects skip is the **evaluation harness**. Building repeatable test cases with context-precision and coverage metrics means changes can be regression-tested instead of eyeballed — that's the difference between a demo and something you could actually maintain. The second decision I'd defend in an interview is the **intent-routing architecture**: separating knowledge, action, and out-of-scope into distinct lanes gives cleaner failure modes and far fewer hallucinations than a monolithic RAG chain, at the cost of more upfront structure.
 
 Honest limitations: retrieval ran against a hosted course model endpoint, and the semantic/lexical hybrid weighting was hand-tuned rather than learned; the scraper is also brittle to CIE site changes. If I extended it, I'd add faithfulness/answer-quality metrics on top of context precision, and automate re-indexing so the knowledge base can't silently go stale.
-
-**My contribution (team project):** [FILL: name the components you owned — e.g., the RAG retriever/hybrid search, the evaluation framework, the guardrails, or specific tools. Be specific; this is the first thing an interviewer will ask.]
 
 ---
 
