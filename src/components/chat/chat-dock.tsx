@@ -5,10 +5,10 @@ import { site } from "@/lib/site";
 import { useChat } from "./chat-context";
 
 export const SUGGESTED_QUESTIONS = [
-  "Do you have RAG / LLM experience?",
-  "Tell me about the fraud detection project.",
-  "What's your experience with credit risk and model governance?",
-  "Are you open to new opportunities?",
+  "What kind of roles are you looking for?",
+  "Do you have LLM / RAG experience?",
+  "Walk me through your most technical project.",
+  "What's your modeling stack?",
 ];
 
 export function ChatDock() {

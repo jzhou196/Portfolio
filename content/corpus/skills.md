@@ -14,7 +14,7 @@ Depth-marked: **core** = used daily in serious projects and can defend in depth 
 
 - **Gradient boosting (LightGBM / XGBoost / CatBoost) — core.** Multi-model evaluation frameworks for CLV; gradient boosting for fraud (AUC 0.907).
 - **Explainability / SHAP — core.** Per-account signed SHAP reasons in the fraud engine; SHAP-driven feature narratives for CLV stakeholders.
-- **Model validation & governance — strong.** Data-leakage registers, calibration-drift diagnosis, percentile operating points, fairness / disparate-impact auditing, imbalanced-data evaluation (PR-AUC, lift@top-k, F-β cutoffs).
+- **Model validation & evaluation — strong.** Data-leakage registers, calibration-drift diagnosis, percentile operating points, fairness / disparate-impact auditing, imbalanced-data evaluation (PR-AUC, lift@top-k, F-β cutoffs). Applies to any high-stakes model, in or out of a regulated setting.
 - **Quantile regression — strong.** Distributional CLV prediction for heavy-tailed value.
 - **Segmentation (K-Means / GMM / K-prototypes) — strong.** High-value persona identification at BMO.
 - **Causal inference & A/B testing — strong.** RCT design for campaign incremental-lift measurement; counterfactual campaign-ROI simulation.

@@ -1,8 +1,8 @@
 export const site = {
-  name: "Jeff Zhou",
-  title: "Jeff Zhou — Data Scientist",
+  name: "Jiefu (Jeff) Zhou",
+  title: "Jiefu (Jeff) Zhou — Data Scientist",
   description:
-    "Applied ML in financial services: fraud & credit risk, model governance, customer analytics, and LLM/RAG systems. Finance undergrad + Rotman MMA.",
+    "End-to-end machine learning: large-scale predictive modeling, NLP and transformers, and production LLM/RAG systems. Finance undergrad + Rotman MMA, Toronto.",
   url: "https://portfolio-lac-nu-34.vercel.app",
   email: "jzhou196196@gmail.com",
   github: "https://github.com/jzhou196",

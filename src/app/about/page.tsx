@@ -4,12 +4,12 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Jeff Zhou — data scientist at the intersection of quantitative modeling and business communication. Finance undergrad + Rotman MMA, Toronto.",
+    "Jiefu (Jeff) Zhou — data scientist working across predictive modeling, NLP and transformers, and production LLM/RAG systems. Finance undergrad + Rotman MMA, Toronto.",
 };
 
 const skills = [
   { area: "Core", items: "Python (pandas, NumPy, scikit-learn) · SQL · gradient boosting (LightGBM / XGBoost / CatBoost) · SHAP · data visualization & storytelling" },
-  { area: "Strong", items: "Model validation & governance · quantile regression · causal inference & A/B testing · deep learning (PyTorch) · transformers (DistilBERT) · RAG / agentic systems · SAS Viya · Power BI (PL-300 certified) · segmentation · Streamlit · Git" },
+  { area: "Strong", items: "Deep learning (PyTorch) · transformers (DistilBERT) · RAG / agentic systems · causal inference & A/B testing · quantile regression · segmentation (K-Means / GMM / K-prototypes) · model validation & evaluation · SAS Viya · Power BI (PL-300 certified) · Streamlit · Git" },
   { area: "Working", items: "R · PySpark · TensorFlow · MLflow · AWS · Monte Carlo simulation" },
 ];
 
@@ -23,37 +23,48 @@ export default function AboutPage() {
 
       <div className="mt-8 space-y-5 leading-relaxed text-muted max-w-2xl">
         <p>
-          I&apos;m Jeff Zhou — a data scientist working at the intersection of quantitative modeling
-          and business communication. My background pairs a finance undergrad (University of Ottawa)
-          with a Rotman Master of Management Analytics (University of Toronto), which is why I care
-          as much about the decision a model drives as the model itself.
+          I&apos;m Jeff Zhou — a data scientist working across the full arc of applied machine
+          learning, from framing a problem to putting a model in front of a decision. My background
+          pairs a finance undergrad (University of Ottawa) with a Rotman Master of Management
+          Analytics (University of Toronto), which is why I care as much about the decision a model
+          drives as the model itself.
         </p>
         <p>
           The through-line across my work is{" "}
-          <strong className="text-text">applied ML that ships a decision</strong>, on both sides of
-          the ledger:
+          <strong className="text-text">applied ML that reaches production</strong>. It shows up in
+          three ways:
         </p>
         <ul className="space-y-3">
           <li className="grid grid-cols-[auto_1fr] gap-x-3">
             <span className="text-sage font-mono">·</span>
             <span>
-              <strong className="text-text">Managing risk</strong> — fraud and credit-risk models a
-              bank can actually act on, built with the leakage discipline, calibration, fairness
-              auditing, and explainability a regulated environment demands.
+              <strong className="text-text">Predictive modeling at scale</strong> — gradient
+              boosting, segmentation, and quantile methods on multi-million-row customer data, with
+              SHAP explanations and the pipelines to make training and validation reproducible.
             </span>
           </li>
           <li className="grid grid-cols-[auto_1fr] gap-x-3">
             <span className="text-sage font-mono">·</span>
             <span>
-              <strong className="text-text">Driving growth</strong> — customer-lifetime-value models
-              that turn predictions into targeting and campaign-ROI decisions marketing can spend
-              against.
+              <strong className="text-text">Language &amp; AI systems</strong> — transformers
+              fine-tuned and benchmarked against real baselines, and agentic RAG assistants with
+              hybrid retrieval, tool use, guardrails, and an evaluation harness.
+            </span>
+          </li>
+          <li className="grid grid-cols-[auto_1fr] gap-x-3">
+            <span className="text-sage font-mono">·</span>
+            <span>
+              <strong className="text-text">Measurement that holds up</strong> — randomized
+              experiments and incremental-lift measurement, leakage control, calibration checks, and
+              honest benchmarking, including reporting when the simpler model wins.
             </span>
           </li>
         </ul>
         <p>
-          That combination — quantitative depth plus the governance and communication to put a model
-          into production responsibly — is what I bring to a team.
+          That combination — modeling depth, the rigor to know when a result is real, and the
+          communication to turn it into a decision — is what I bring to a team. My experience is
+          concentrated in financial services, but the methods travel: the same work is customer
+          analytics, rare-event detection, text classification, and AI assistants in any industry.
         </p>
       </div>
 
@@ -63,12 +74,11 @@ export default function AboutPage() {
         </h2>
         <div className="space-y-4 leading-relaxed text-muted max-w-2xl">
           <p>
-            Analytics on the data science side at <strong className="text-text">BMO</strong>, moving
-            into an Audit AI &amp; Analytics role.{" "}
+            Analytics on the data science side at <strong className="text-text">BMO</strong>.{" "}
             <strong className="text-text">I&apos;m openly open to new opportunities</strong> —
-            applied ML / data science roles in financial services, especially credit &amp; fraud
-            risk, model risk / monitoring / governance, audit AI &amp; analytics, and customer
-            analytics where models drive targeting and ROI decisions.
+            data scientist, machine learning / applied scientist, and AI &amp; GenAI roles
+            (including AI enablement), across industries. Quantitative, risk, and model-governance
+            roles are on the table too; they&apos;re one option among several rather than the focus.
           </p>
           <p>Based in Toronto — open to roles across Canada.</p>
         </div>

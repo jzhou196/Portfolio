@@ -23,16 +23,16 @@ export type Project = {
   footnote?: string;
 };
 
-export const projects: Project[] = [
+const allProjects: Project[] = [
   {
     slug: "fraud-detection",
-    index: "01",
+    index: "04",
     logo: { src: "/logos/scotiabank.svg", alt: "Scotiabank", bg: "#ffffff" },
     title: "Credit-Card Fraud Detection",
     tagline:
       "Turn 4,224 raw accounts into a short, ranked, explained list of suspicious nodes an investigator can act on.",
     summary:
-      "A five-phase, all-SAS-Viya pipeline for three-class fraud/abuse detection — leakage register, per-account SHAP reasons, fairness audit, and a three-tier decision engine. Reviewing 43.5% of accounts catches 90.4% of fraud.",
+      "Rare-event classification done properly, end to end: a five-phase pipeline with a formal leakage register, per-record SHAP explanations, a fairness audit, and a three-tier decision engine. Reviewing 43.5% of accounts catches 90.4% of fraud.",
     org: "Rotman Crime Lab · client project for a major Canadian bank",
     tags: [
       "SAS Viya / CAS",
@@ -105,17 +105,18 @@ export const projects: Project[] = [
       },
     ],
     footnote:
-      "My strongest evidence for credit-risk, fraud, and model-governance / audit-AI roles: a full lifecycle — data engineering, leakage control, modeling, explainability, fairness, and an operating policy — not just a model.",
+      "My most complete end-to-end project: data engineering, leakage control, modeling, explainability, fairness auditing, and an operating policy — not just a model. The domain is fraud; the transferable part is building a rare-event classifier people will actually trust and act on.",
   },
   {
     slug: "clv-prediction",
     index: "02",
+
     logo: { src: "/logos/bmo.svg", alt: "BMO", bg: "#ffffff" },
     title: "Customer Lifetime Value → Campaign ROI",
     tagline:
       "Rank customers by expected lifetime value at two decision points, then turn predictions into a targeting decision marketing can spend against.",
     summary:
-      "Two CLV models for a retail-banking portfolio — acquisition (demographics only) and day-one (early account signals) — on a heavy-tailed signed target, wrapped in a counterfactual campaign-ROI simulation. ~6.2× lift @ top-10%.",
+      "Large-scale predictive modeling on a 6M+ customer base: two models matched to two decision points, a heavy-tailed signed target, SHAP and quantile regression, wrapped in a counterfactual campaign-ROI simulation. ~6.2× lift @ top-10%.",
     org: "Retail bank · Advanced Data Science team",
     tags: [
       "Python",
@@ -186,11 +187,12 @@ export const projects: Project[] = [
       },
     ],
     footnote:
-      "Paired with the fraud project's governance depth, this shows both sides of applied ML in a bank: manage risk, and drive growth.",
+      "The pattern here generalizes well beyond banking: pick the model to match the decision point, model the tail rather than the mean, and translate a prediction into an expected-return decision someone can act on.",
   },
   {
     slug: "nlp-sentiment",
     index: "03",
+
     logo: { src: "/logos/rotman.svg", alt: "Rotman School of Management", bg: "#EC008C" },
     title: "Sentiment: Classical vs. Deep vs. Transformer",
     tagline:
@@ -246,13 +248,13 @@ export const projects: Project[] = [
   },
   {
     slug: "cie-agent-rag",
-    index: "04",
+    index: "01",
     logo: { src: "/logos/rotman.svg", alt: "Rotman School of Management", bg: "#EC008C" },
     title: "CIE Agent — Agentic RAG Assistant",
     tagline:
       "Answer international students' questions with sources, complete structured tasks, and never hallucinate immigration advice.",
     summary:
-      "A production-style agentic RAG assistant for UofT's Centre for International Experience — intent routing, hybrid retrieval, multi-turn tool actions, guardrails, and a real evaluation harness. The sibling of this site's own chatbot.",
+      "A production-style agentic RAG assistant — intent routing, hybrid retrieval, multi-turn tool actions, prompt-injection guardrails, and a real evaluation harness with context-precision metrics. The sibling of this site's own chatbot.",
     org: "University of Toronto · Centre for International Experience",
     tags: [
       "Python",
@@ -322,6 +324,12 @@ export const projects: Project[] = [
       "This project is the direct proof-of-work behind this site's own chatbot — the same retrieval-plus-grounding pattern, scaled down to a personal corpus. Try the \"Ask about me\" prompt and you're using it.",
   },
 ];
+
+// Display order is driven by each project's `index`, so re-ordering the grid
+// is a one-line change per project rather than a block move.
+export const projects: Project[] = [...allProjects].sort((a, b) =>
+  a.index.localeCompare(b.index),
+);
 
 export function getProject(slug: string): Project | undefined {
   return projects.find((p) => p.slug === slug);

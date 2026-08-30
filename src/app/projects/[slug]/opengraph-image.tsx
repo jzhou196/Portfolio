@@ -58,7 +58,7 @@ export default async function OpengraphImage({
           {tagline}
         </div>
         <div style={{ display: "flex", fontSize: 24, marginTop: 48, color: "#79b4a4" }}>
-          Jeff Zhou — problem → approach → result → reflection
+          Jiefu (Jeff) Zhou — problem → approach → result → reflection
         </div>
       </div>
     ),

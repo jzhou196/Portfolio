@@ -1,6 +1,6 @@
 # Resume — Jiefu (Jeff) Zhou
 
-Data scientist / data analyst focused on applied ML in financial services. Toronto, Canada.
+Data scientist focused on end-to-end applied machine learning — large-scale predictive modeling, NLP and transformers, experimentation, and production LLM/RAG systems. Toronto, Canada. Open to data scientist, ML / applied scientist, and AI & GenAI roles across industries.
 
 **Contact:** jzhou196196@gmail.com · [LinkedIn](https://www.linkedin.com/in/rotman-mma) · [GitHub](https://github.com/jzhou196)
 

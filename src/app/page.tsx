@@ -18,14 +18,14 @@ export default function Home() {
           <h1 className="font-mono text-3xl sm:text-5xl text-text leading-tight">
             Jiefu (Jeff) Zhou
             <span className="block mt-2 text-xl sm:text-2xl text-muted font-sans font-normal">
-              Data scientist — applied ML that ships a decision.
+              Data scientist — end-to-end ML that ships a decision.
             </span>
           </h1>
           <p className="mt-6 max-w-2xl text-muted leading-relaxed">
-            Finance undergrad + Rotman MMA. I build models banks can act on — fraud and credit-risk
-            systems with the governance a regulated environment demands, customer-lifetime-value
-            models marketing can spend against, and grounded LLM/RAG assistants that don&apos;t make
-            things up.
+            Finance undergrad + Rotman MMA. I build models that make it into production: predictive
+            systems on multi-million-row customer data, deep-learning and transformer models for
+            text, and grounded LLM/RAG assistants that don&apos;t make things up — built at BMO,
+            Scotiabank, and the University of Toronto.
           </p>
         </div>
         <div className="mt-10 hero-enter-late">
@@ -58,15 +58,15 @@ export default function Home() {
         </p>
         <div className="max-w-2xl space-y-4 leading-relaxed text-muted">
           <p>
-            The through-line across my work is applied ML on both sides of a bank&apos;s ledger:{" "}
-            <strong className="text-text">managing risk</strong> — fraud and credit models built
-            with leakage discipline, calibration, fairness auditing, and explainability — and{" "}
-            <strong className="text-text">driving growth</strong> — CLV models that turn predictions
-            into targeting and campaign-ROI decisions.
+            The through-line across my work is <strong className="text-text">applied ML that
+            reaches production</strong>: predictive modeling at scale, language and LLM systems, and
+            the measurement discipline — experiment design, leakage control, honest benchmarking —
+            that decides whether a model survives contact with real data.
           </p>
           <p>
-            Currently on the data science side at BMO, moving into Audit AI &amp; Analytics. Based
-            in Toronto, open to roles across Canada — and openly open to new opportunities.
+            Currently on the data science side at BMO. Based in Toronto, open to roles across Canada
+            — and openly open to new opportunities as a data scientist, ML / applied scientist, or
+            in AI &amp; GenAI work.
           </p>
           <p className="font-mono text-sm">
             <Link href="/about" className="text-sage hover:text-amber transition-colors">

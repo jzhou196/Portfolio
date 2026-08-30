@@ -41,4 +41,4 @@ And the most honest finding of all: the rule engine's recall (90.4%) does **not*
 
 ---
 
-*This is my strongest evidence for credit-risk, fraud, and model-governance / audit-AI roles: it's a full lifecycle — data engineering, leakage control, modeling, explainability, fairness, and an operating policy — not just a model.*
+*This is my most complete end-to-end project — data engineering, leakage control, modeling, explainability, fairness auditing, and an operating policy, not just a model. The domain is fraud; the transferable part is building a rare-event classifier people will actually trust and act on, which is the same problem as churn, defect detection, or any high-stakes imbalanced classification.*

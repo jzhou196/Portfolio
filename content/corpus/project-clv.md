@@ -37,4 +37,4 @@ Marketing can't profitably target everyone — it needs to rank customers by exp
 
 ---
 
-*This is my strongest evidence for marketing-analytics and applied-ML roles where the job is turning predictions into decisions (targeting, ROI) — and it pairs with the fraud project's model-governance depth to show both the "make money" and "manage risk" sides of applied ML.*
+*This is my strongest evidence for applied-ML and data-science roles where the job is turning predictions into decisions. The pattern generalizes well beyond banking: match the model to the decision point, model the tail rather than the mean, and translate a prediction into an expected-return decision someone can act on.*
